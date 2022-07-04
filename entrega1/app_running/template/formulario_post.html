@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+{% extends "padre2.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+<header class="py-1 bg-light border-bottom mb-1">
+  <div class="container">
+      <div class="text-center my-1">
+          <h4 class="fw-bolder">LOS POST...</h4>
+          <button>
+            <a href="{% url 'post' %}">Ir a los POST</a>
+          </button>
+      </div>
+  </div>
+</header>
+<a href="#!"><img class="mx-auto d-block" src="https://images.pexels.com/photos/789371/pexels-photo-789371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." width="300" heigth="200" /></a>
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-6">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+    <form action = "alta_post" method="POST">
+        {% csrf_token %}
+        <p>Nombre:</p>
+        <input type="text" name="nombre" required> 
+        <p>Mensaje:</p>
+        <input type="text" name="mensaje" required> 
+       
+
+        <input type="submit" value="Enviar">
+
+
+    </form>
+
+   
+
+{% endblock %}

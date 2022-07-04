@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+{% extends "padre1.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+        <!-- Page content-->
+        <div class="container">
+            <div class="row">
+                <!-- Blog entries-->
+                <div class="col-lg-8">
+                    <!-- Featured blog post-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="mx-auto d-block" src="https://images.pexels.com/photos/39308/runners-silhouettes-athletes-fitness-39308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." width="700" heigth="250" /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">Febrero, 2020</div>
+                            <h2 class="card-title">Cosas Raras del Running</h2>
+                            <p class="card-text">Quien diga que correr provoca adicción no se equivoca: el 'subidón' del 'runner' existe!</p>
+                            <a class="btn btn-primary" href="{% url  'noticias' %}">Leer Más →</a>
+                        </div>
+                    </div>
+                    <!-- Nested row for non-featured blog posts-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="mx-auto d-block" src="https://images.pexels.com/photos/3760259/pexels-photo-3760259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." width="400" heigth="200" /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">Junio, 2022</div>
+                                    <h2 class="card-title h4">Corredores</h2>
+                                    <p class="card-text">Nuestra base de Corredores. </p>
+                                    <a class="btn btn-primary" href="{% url  'corredor' %}">Info →</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="mx-auto d-block" src="https://images.pexels.com/photos/1546105/pexels-photo-1546105.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." width="400" heigth="200" /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">Junio, 2022</div>
+                                    <h2 class="card-title h4">Teams</h2>
+                                    <p class="card-text">Todos los Teams que esperan para acompañarte en esta apasionante aventura.</p>
+                                    <a class="btn btn-primary" href="{% url  'teams' %}">Info →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="mx-auto d-block" src="https://images.pexels.com/photos/2402734/pexels-photo-2402734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." width="400" heigth="200" /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">Junio, 2022</div>
+                                    <h2 class="card-title h4">Carreras</h2>
+                                    <p class="card-text">Encontrá detalle de las carreras vigentes.</p>
+                                    <a class="btn btn-primary" href="{% url  'carreras' %}">Info →</a>
+                                </div>
+                            </div>
+                            <!-- Blog post-->
+                            <div class="card mb-4">
+                                <a href="#!"><img class="card-img-top" src="https://images.pexels.com/photos/4529589/pexels-photo-4529589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." width="400" heigth="200" /></a>
+                                <div class="card-body">
+                                    <div class="small text-muted">January 1, 2022</div>
+                                    <h2 class="card-title h4">POST</h2>
+                                    <p class="card-text">Los POST que no nos podemos perder.</p>
+                                    <a class="btn btn-primary" href="{% url  'post' %}">Ir a los Post →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination-->
+                   
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">ADMINISTRACION</div>
+                        <div class="card-body">
+                         
+                      
+                   
+                    <!-- Side widget-->
+                  
+                </div>
+
+
+                <div class="card mb-4">
+                    <div class="card-header">Buscar</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="buscar_corredor">Corredor por Nombre</a></li>
+                                    <li><a href="buscar_corredor_apellido">Corredor por Apellido</a></li>
+                                    <li><a href="buscar_carreras_nombre">Carreras por Nombre</a></li>
+                                                                                      
+                                </ul>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+              
+            </div>
+
+
+            <div class="card mb-4">
+                <div class="card-header">Categorias</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="{% url 'corredoradm' %}">CORREDORES</a></li>
+                                    <li><a href="{% url 'carrerasadm' %}">CARRERAS</a></li>
+                                    <li><a href="{% url 'teamsadm' %}">TEAMS</a></li>
+                                    <li><a href="{% url 'postadm' %}">POSTEOS</a></li>
+                                </ul>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+       </div>
+            </div>
+           
+        <!-- Footer-->
+       
+               
+
+        
+        {% endblock %}
+
+
+
+
+       
+       
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

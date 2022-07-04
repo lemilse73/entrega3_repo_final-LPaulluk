@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+{% extends "padre1.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+<header class="py-1 bg-light border-bottom mb-1">
+  <div class="container">
+      <div class="text-center my-1">
+          <h4 class="fw-bolder">ESTOS SON LOS CORREDORES QUE RESPONDEN A TU BUSQUEDA</h4>
+      </div>
+  </div>
+</header>
+<a href="#!"><img class="mx-auto d-block" src="https://images.pexels.com/photos/3760259/pexels-photo-3760259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." width="500" heigth="350" /></a>
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>   
+
+      {% if corredor %}
+
+        <ul>
+            {% for corredor in corredor %}
+                <p>
+
+
+                </p>
+                <li class="text-center my-1">Nombre: {{corredor.nombre}} Apellido: {{corredor.apellido}} Modalidad: {{corredor.modalidad}} Email: {{corredor.email}} Teams: {{corredor.team}}</li> 
+              
+            {% endfor %} 
+        </ul>
+        {% else %}
+            <p>No se encontraron datos</p>
+         
+        {% endif %}
+    
+
+
+
+
+
+  
+</body>
+
+
+{% endblock %}

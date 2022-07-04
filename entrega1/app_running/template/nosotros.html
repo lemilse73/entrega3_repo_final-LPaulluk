@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Blog Home - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'app_running/css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href= "{% url 'home' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href= "{% url 'nosotros' %}">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href= "{% url 'contacto' %}">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page header with logo and tagline-->
+        <header class="py-5 bg-light border-bottom mb-4">
+            <div class="container">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder">Nosotros!</h1>
+                    <p class="lead mb-0">Te contamos un poco acerca de nosotros</p>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- Page content-->
+       
+         <a href="#!"><img class="mx-auto d-block" src="https://images.pexels.com/photos/40751/running-runner-long-distance-fitness-40751.jpeg" alt="..." width="700" heigth="250" /></a>
+                       
+        <!-- Footer-->
+       
+               
+       <!-- Page Header-->
+       <header class="masthead" style="background-image: url('assets/img/post-bg.jpg')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+                        <h1>Apasionada-Aventura-Soñadora</h1>
+                        <h2 class="subheading">Apasionada por el running, aventurera de las geografías, soñadora de las metas</h2>
+                        <span class="meta">
+                            Posted by
+                            <a href="#!">LP</a>
+                            en Junio 2022
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Post Content-->
+    <article class="mb-4">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <p>De profesión contadora y profesora, estudiante de abogacía y programación, en mis momentos libres practico running y trail running.
+                    <p>Con constancia y mucha pasión este deporte me permite enteder la vida desde otro lugar, con sabores buenos y malos, pero siempre con un resultado final.</p>
+                    <p>Fue así que mientras lo hago, he entendido la importancia de estar conectado con la información que ayude a la causa, con los otros corredores y grupos Teams.</p>
+                    <p>De allí nació esta idea, esta página para mi, y para todos.</p>
+                    <p>A disfritar!</p>
+                </div>
+            </div>
+        </div>
+    </article>

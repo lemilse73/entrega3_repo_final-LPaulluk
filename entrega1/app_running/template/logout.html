@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+{% extends "padre2.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<a href="#!"><img class="mx-auto d-block" src="https://images.pexels.com/photos/694587/pexels-photo-694587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." width="450" heigth="250" /></a>
+
+
+<body>
+    
+    <h2 class="text-center"> GRACIAS, TE ESPERAMOS PRONTO!</h2>
+    <a href="{%  url 'login' %}" >INGRESAR</a>
+</body>
+</html>
+
+{% endblock %}

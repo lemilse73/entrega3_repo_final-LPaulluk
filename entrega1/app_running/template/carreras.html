@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+{% extends "padre2.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+<header class="py-1 bg-light border-bottom mb-1">
+  <div class="container">
+      <div class="text-center my-1">
+          <h4 class="fw-bolder">LAS CARRERAS ACTIVAS</h4>
+      </div>
+  </div>
+</header>
+<a href="#!"><img class="mx-auto d-block" src="https://images.pexels.com/photos/2402734/pexels-photo-2402734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="..." width="500" heigth="350" /></a>
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Nro Orden</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Modalidad</th>
+            <th scope="col">Distancia</th> 
+            <th scope="col">Fecha</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for n in carreras %}
+            <tr>
+                <th scope="row">{{n.id}}</th>
+                <td>{{n.nombre}}</td>
+                <td>{{n.modalidad}}</td>
+                <td>{{n.distancia}}</td>
+                <td>{{n.fecha}}</td>
+                
+            </tr>
+            {% endfor %}
+         
+        </tbody>
+      </table>
+      
+
+{% endblock %}

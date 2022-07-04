@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+{% extends "padre2.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+
+<body>
+  <h2>Contactanos!</h2>
+ 
+
+
+<form action="" class="formulario_contacto" method="POST">
+ 
+  {% csrf_token %}
+
+    
+  {{ form }}
+
+ 
+  <button type="submit" id="btnEnviar" class="button">Enviar</button>
+
+  
+
+</form>
+{{mensaje}}
+<table id="tablacontactos">
+</table>
+    
+{% endblock %}
